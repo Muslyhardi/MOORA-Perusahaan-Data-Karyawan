@@ -1,0 +1,191 @@
+<div class="page-header">
+
+    <h2>
+
+        Data Kriteria
+
+    </h2>
+
+    <button
+        class="action-btn"
+        onclick="bukaFormKriteria()">
+
+        Tambah Kriteria
+
+    </button>
+
+</div>
+
+<div class="table-card">
+
+    <table class="main-table">
+
+        <thead>
+
+            <tr>
+
+                <th>
+                    Kode
+                </th>
+
+                <th>
+                    Nama Kriteria
+                </th>
+
+                <th>
+                    Bobot
+                </th>
+
+                <th>
+                    Atribut
+                </th>
+
+                <th>
+                    Aksi
+                </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody
+            id="kriteriaTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div
+    id="modalKriteria"
+    class="modal">
+
+    <div class="modal-content">
+
+        <h3 id="judulKriteria">
+            Tambah Kriteria
+        </h3>
+
+        <br>
+
+        <div class="form-group">
+
+            <label>
+
+                Kode Kriteria
+
+            </label>
+
+            <input
+                type="text"
+                id="kriteriaKode">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Nama Kriteria
+
+            </label>
+
+            <input
+                type="text"
+                id="kriteriaNama">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Bobot
+
+            </label>
+
+            <input
+                type="number"
+                step="0.01"
+                id="kriteriaBobot">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Atribut
+
+            </label>
+
+            <select
+                id="kriteriaAtribut">
+
+                <option>
+                    Benefit
+                </option>
+
+                <option>
+                    Cost
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>
+
+                Jenis Skala
+
+            </label>
+
+            <select
+                id="kriteriaSkala">
+
+                <option
+                    value="general">
+
+                    General (1-4)
+
+                </option>
+
+                <option
+                    value="masaKerja">
+
+                    Masa Kerja (2-7)
+
+                </option>
+
+            </select>
+
+        </div>
+
+        <br>
+
+        <div class="btn-group">
+
+            <button
+                class="action-btn"
+                onclick="simpanKriteria()">
+
+                Simpan
+
+            </button>
+
+            <button
+                class="btn-delete"
+                onclick="tutupFormKriteria()">
+
+                Batal
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

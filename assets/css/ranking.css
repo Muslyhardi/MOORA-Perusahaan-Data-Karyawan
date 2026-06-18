@@ -1,0 +1,25 @@
+#rankingTable td{ vertical-align:middle;}
+
+#rankingTable td:nth-child(1){
+    font-size:20px;
+    font-weight:bold;
+}
+
+#rankingTable td:nth-child(2){
+    font-weight:bold;
+    color:#145A32;
+}
+
+#rankingTable td:nth-child(3){ text-align:left; }
+
+#rankingTable td:nth-child(5){ font-weight:bold; }
+
+#rankingTable td:nth-child(6){ font-weight:bold; }
+
+#benefitThreshold{ max-width:250px; }
+
+@media(max-width:768px){
+    #rankingTable{ font-size:12px; }
+    #rankingTable td,
+    #rankingTable th{ padding:8px 5px; }
+}

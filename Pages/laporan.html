@@ -1,0 +1,172 @@
+<div class="page-header hide-print">
+
+    <h2>
+
+        Cetak Laporan
+
+    </h2>
+
+</div>
+
+<div class="dashboard-card hide-print">
+
+    <h3>
+        Ringkasan Laporan
+    </h3>
+
+    <p>
+        Halaman ini digunakan untuk
+        melihat hasil akhir perhitungan
+        metode MOORA serta mencetak
+        laporan keputusan.
+    </p>
+
+</div>
+
+<div class="stats-grid">
+
+    <div class="stat-card">
+
+        <h3>
+
+            Total Karyawan
+
+        </h3>
+
+        <span
+            id="laporanTotalKaryawan">
+
+            0
+
+        </span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>
+
+            Total Kriteria
+
+        </h3>
+
+        <span
+            id="laporanTotalKriteria">
+
+            0
+
+        </span>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>
+
+            Layak Benefit
+
+        </h3>
+
+        <span
+            id="laporanTotalBenefit">
+
+            0
+
+        </span>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="dashboard-card">
+
+    <h3>
+        Hasil Ranking Akhir
+    </h3>
+
+    <div class="table-card">
+
+        <table class="main-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Rank
+                    </th>
+
+                    <th>
+                        ID
+                    </th>
+
+                    <th>
+                        Nama
+                    </th>
+
+                    <th>
+                        Nilai MOORA
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody
+                id="laporanRankingTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<br>
+
+<div class="dashboard-card hide-print">
+
+    <h3>
+
+        Cetak Laporan
+
+    </h3>
+
+    <p>
+
+        Klik tombol di bawah untuk
+        mengunduh laporan hasil
+        perhitungan MOORA.
+
+    </p>
+
+    <br>
+
+    <div class="btn-group">
+
+        <button
+            class="action-btn"
+            onclick="downloadPDF()">
+
+            Download Laporan
+
+        </button>
+
+        <button
+            class="btn-edit"
+            onclick="window.print()">
+
+            Print
+
+        </button>
+
+    </div>
+
+</div>
