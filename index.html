@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        MOORA PERUSAHAAN
+    </title>
+
+    <link rel="stylesheet"
+          href="Assets/CSS/login.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/layout.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/dashboard.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/karyawan.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/kriteria.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/penilaian.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/moora.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/ranking.css">
+
+    <link rel="stylesheet"
+          href="Assets/CSS/laporan.css">
+
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+
+    <div id="loginPage">
+
+        <div class="login-container">
+
+            <div class="login-card">
+
+                <div class="login-form">
+
+                    <h1>
+                        SPK MOORA
+                    </h1>
+
+                    <p class="login-subtitle">
+                        Sistem Pendukung Keputusan
+                        Penilaian Kinerja Karyawan
+                    </p>
+
+                    <div class="login-info">
+
+                        Username :
+                        <b>admin</b>
+
+                        <br>
+
+                        Password :
+                        <b>1234</b>
+
+                    </div>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Username">
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password">
+
+                    <button
+                        onclick="login()">
+
+                        Login
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- APP -->
+
+   <div id="app" style="display:none;">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <h2>
+                    SPK MOORA
+                </h2>
+
+                <span>
+                    MOORA PERUSAHAAN
+                </span>
+
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <button
+                    id="menu-dashboard"
+                    onclick="loadPage('dashboard')">
+
+                    Dashboard
+
+                </button>
+
+                <button
+                    id="menu-karyawan"
+                    onclick="loadPage('karyawan')">
+
+                    Data Karyawan
+
+                </button>
+
+                <button
+                    id="menu-kriteria"
+                    onclick="loadPage('kriteria')">
+
+                    Data Kriteria
+
+                </button>
+
+                <button
+                    id="menu-penilaian"
+                    onclick="loadPage('penilaian')">
+
+                    Data Penilaian
+
+                </button>
+
+                <button
+                    id="menu-moora"
+                    onclick="loadPage('moora')">
+
+                    Proses MOORA
+
+                </button>
+
+                <button
+                    id="menu-ranking"
+                    onclick="loadPage('ranking')">
+
+                    Ranking Akhir
+
+                </button>
+
+                <button
+                    id="menu-laporan"
+                    onclick="loadPage('laporan')">
+
+                    Cetak Laporan
+
+                </button>
+
+            </nav>
+
+            <button
+                class="logout-btn"
+                onclick="logout()">
+
+                Logout
+
+            </button>
+
+        </aside>
+
+        <!-- CONTENT -->
+
+        <main class="main-content">
+
+            <div class="topbar">
+
+                <h2 id="pageTitle">
+
+                    Dashboard
+
+                </h2>
+
+                <div class="admin-badge">
+
+                    Admin
+
+                </div>
+
+            </div>
+
+            <div id="pageContainer">
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="Assets/JS/storage.js"></script>
+    <script src="Assets/JS/auth.js"></script>
+    <script src="Assets/JS/app.js"></script>
+    <script src="Assets/JS/dashboard.js"></script>
+    <script src="Assets/JS/karyawan.js"></script>
+    <script src="Assets/JS/kriteria.js"></script>
+    <script src="Assets/JS/penilaian.js"></script>
+    <script src="Assets/JS/moora.js"></script>
+    <script src="Assets/JS/ranking.js"></script>
+    <script src="Assets/JS/laporan.js"></script>
+
+</body>
+
+</html>
