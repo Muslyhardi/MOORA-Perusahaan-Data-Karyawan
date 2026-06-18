@@ -1,0 +1,102 @@
+.dashboard-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(
+            220px,
+            1fr
+        )
+    );
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:
+    0 2px 10px rgba(
+        0,
+        0,
+        0,
+        0.06
+    );
+    text-align:center;
+}
+
+.stat-card h3{
+    color:#555;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.stat-card span{
+    font-size:28px;
+    font-weight:bold;
+    color:#145A32;
+}
+
+.dashboard-card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:
+    0 2px 10px rgba(
+        0,
+        0,
+        0,
+        0.06
+    );
+}
+
+.dashboard-card h3{
+    color:#145A32;
+    margin-bottom:20px;
+}
+
+.output-list{
+    display:grid;
+    grid-template-columns:
+    repeat(
+        auto-fit,
+        minmax(
+            280px,
+            1fr
+        )
+    );
+    gap:15px;
+}
+
+.output-list div{
+    background:#F8F9FA;
+    padding:15px;
+    border-left:
+    4px solid #145A32;
+    border-radius:10px;
+    font-weight:500;
+}
+
+.status-benefit{
+    background:#D4EDDA;
+    color:#155724;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.status-non-benefit{
+    background:#F8D7DA;
+    color:#721C24;
+    padding:6px 12px;
+    border-radius:20px;
+    font-weight:bold;
+    display:inline-block;
+}

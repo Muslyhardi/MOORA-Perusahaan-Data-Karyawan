@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{ background:#f4f7f9; }
+
+#loginPage{
+    width:100%;
+    height:100vh;
+    position:relative;
+    background-image:
+    url("../Images/Login_UI.png");
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.login-card{
+    position:absolute;
+    right:180px;
+    top:50%;
+    transform:translateY(-50%);
+    width:420px;
+    background:#ffffff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:
+    0 10px 30px rgba(
+        0,
+        0,
+        0,
+        0.15
+    );
+}
+
+.login-form h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#145A32;
+}
+
+.login-subtitle{
+    text-align:center;
+    margin-bottom:25px;
+    color:#666;
+}
+
+.login-info{
+    background:#F4F6F9;
+    border-left:4px solid #145A32;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+
+.login-form input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+.login-form button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#145A32;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.login-form button:hover{ background:#0f4427; }
+
+@media(max-width:768px){
+    #loginPage{ background-size:cover; }
+
+    .login-card{
+        width:90%;
+        left:50%;
+        right:auto;
+        transform:
+        translate(
+            -50%,
+            -50%
+        );
+        padding:25px;
+    }
+}

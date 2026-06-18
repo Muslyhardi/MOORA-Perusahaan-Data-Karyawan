@@ -1,0 +1,34 @@
+#karyawanTable td{
+
+    vertical-align:middle;
+
+}
+
+#karyawanTable .btn-edit{
+
+    margin-right:5px;
+
+}
+
+#karyawanTable .btn-delete{
+
+    margin-top:5px;
+
+}
+
+@media(max-width:768px){
+
+    #karyawanTable{
+
+        font-size:13px;
+
+    }
+
+    #karyawanTable td,
+    #karyawanTable th{
+
+        padding:8px;
+
+    }
+
+}
